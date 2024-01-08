@@ -210,6 +210,6 @@ jobs:
       working-directory: wrappers/rust
       run: cargo fmt --check
 
-     - name: Build
-       working-directory: wrappers/rust
-       run: cargo build --verbose
+    - name: Build
+      working-directory: wrappers/rust
+      run: cargo build --verbose
