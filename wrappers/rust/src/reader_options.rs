@@ -26,7 +26,7 @@ impl ReaderOptions {
     pub fn add_format(mut self, f: BarcodeFormat) -> Self {
         self.options
             .as_cpp_mut_ref()
-            .addFormat(bindings::base_ffi::BarcodeFormat::from(f).within_unique_ptr());
+            .addFormat(f.within_unique_ptr());
         self
     }
 
